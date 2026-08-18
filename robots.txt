@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://wilmer-oporta.github.io/deca/sitemap.xml
