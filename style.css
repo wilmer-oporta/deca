@@ -415,6 +415,50 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* =========================================================
+   Bloque de dolor (PAS)
+   ========================================================= */
+.pain-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  max-width: 800px;
+}
+@media (min-width: 700px) {
+  .pain-list { grid-template-columns: 1fr 1fr; }
+}
+.pain-list li {
+  position: relative;
+  padding-left: 26px;
+  font-size: 1.02rem;
+}
+.pain-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 12px;
+  height: 3px;
+  background: var(--teal);
+  border-radius: 2px;
+}
+
+/* =========================================================
+   Entregables (Modalidades)
+   ========================================================= */
+.deliverables {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  margin: 36px 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--navy);
+}
+.deliverables li::before { content: "— "; color: var(--teal); }
+
+/* =========================================================
    Footer
    ========================================================= */
 .site-footer {
