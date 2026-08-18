@@ -139,14 +139,15 @@ a { color: inherit; text-decoration: none; }
 }
 .site-nav {
   display: none;
-  gap: 28px;
-  font-size: 0.92rem;
+  gap: 20px;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--charcoal);
+  white-space: nowrap;
 }
 .site-nav a:hover { color: var(--teal); }
 
-@media (min-width: 820px) {
+@media (min-width: 1060px) {
   .site-nav { display: flex; }
 }
 .nav-cta { flex-shrink: 0; padding: 10px 20px; font-size: 0.88rem; }
